@@ -1,0 +1,6 @@
+[submodule "libraries/Adafruit_HTU21DF_Library"]
+	path = libraries/Adafruit_HTU21DF_Library
+	url = https://github.com/molnarkares/Adafruit_HTU21DF_Library.git
+[submodule "libraries/SimpleTimer"]
+	path = libraries/SimpleTimer
+	url = https://github.com/infomaniac50/SimpleTimer.git
