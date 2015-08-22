@@ -1,0 +1,11 @@
+{
+	"id":1,
+    "temp": 25.3,
+	"hum": 98.1,
+	"uptime":60003,
+	"free": 75,
+	"auto": "on",
+	"manual": "on",
+	"desired": 70,
+	"full": "on"
+}

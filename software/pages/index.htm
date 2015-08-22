@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>Dehumidifier</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel='stylesheet' href='main.css' />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src='//stevenlevithan.com/assets/misc/date.format.js'></script>
+<script src='main.js'></script>
+</head><body><div id='main' data-role='page'>
+<div data-role='header' data-position='fixed'><h3>Temperature and Humidity data</h3></div>
+<div data-role='content'>
+<ul id='list' data-role='listview' data-inset='true'></ul>
+
+<div class="ui-field-contain">
+	<label for="autocontrol">Auto control:</label>
+	<select name="autocontrol" id="autocontrol" data-role="flipswitch">
+		<option value="off">Off</option>
+		<option value="on">On</option>
+	</select>
+</div>
+<div class="ui-field-contain">
+	<label for="mancontrol">Manual control:</label>
+	<select name="mancontrol" id="mancontrol" data-role="flipswitch">
+		<option value="off">Off</option>
+		<option value="on">On</option>
+	</select>
+</div>
+
+
+<div class="ui-field-contain">
+	<label for="water-container">Water container:</label>
+	<select name="water-container" id="water-container" disabled = "disabled" data-role="flipswitch">
+		<option value="off">OK</option>
+		<option value="on">Full</option>
+	</select>
+</div>
+
+<form>
+    <label for="humset">Desired humidity:</label>
+    <input name="humset" id="humset" min="0" max="100" type="range">
+</form>
+
+<p id='info'></p>
+</div></div>
+</body></html>
