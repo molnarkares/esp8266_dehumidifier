@@ -14,6 +14,7 @@ This embedded project is aiming to add control logic to a primitive dehumidifier
 This is an Arduino sketch that is supposed to be compiled and downloaded by Arduino for ESP8266. See installation instructions here: https://github.com/esp8266/Arduino
 
 The sketch is using two additional libraries. The SimpleTimer is used to trigger periodic events and Adafruit's HTU21DF library is used for commmunicating with the humifity sensor. It is important that the HTU21DF library had to be extended, because the SDA and SCL pins are configurable in ESP8266. So use the fork of the library from the location referred in the git submodules.
+You shalll copy these two libraries to the Arduino/libraries folder of your local installation. Usualyy this is the <user>/Documents/Arduino/libraries folder. 
 
 ## Configuration
 
