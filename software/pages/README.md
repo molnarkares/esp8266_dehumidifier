@@ -17,7 +17,7 @@ The page connsists of a single main HTML file (**index.html**) that refers to
 1. Convert the file using a compressor tool. Either use the recommended ones below or another that you like better.
 2. Paste the compressed file in a text editor and replace the quotation mark " to \"
 3. It is recommended to break down the compressed content to multiple lines for better readability. 
-4. Add 'message += F("' at the beginning of each line and '");" at the end of the  lines.
+4. Add '    message += F("   ' at the beginning of each line and '   ");   ' at the end of the  lines.
 5. Copy-paste the formatted message to the Arduino sketch.
 
 ### index.html
