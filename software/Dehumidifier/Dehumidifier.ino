@@ -6,6 +6,7 @@
 #include <Adafruit_HTU21DF.h>
 #include <EEPROM.h>
 #include <SimpleTimer.h>
+#include <ping.h>
  
 typedef struct {
   const char *ssid;
@@ -35,6 +36,7 @@ ESP8266WebServer server(80);
 SimpleTimer timer;
 int configTimerId = -1;
 
+
 typedef struct {
   bool autocontrol;
   bool manual;
@@ -45,13 +47,15 @@ typedef struct {
 t_settings settings;
 
 #define VALIDMAGIC  0xcccc
-
+#define WATCHCOUNT  10
 const t_settings ref_settings = {
   .autocontrol = false,
   .manual = false,
   .desiredval = 60,
   .validMagic = VALIDMAGIC
 };
+
+int watch_count = WATCHCOUNT;
 
 float lastTemp = 0.0;
 float lastHum = 0.0;
@@ -73,6 +77,7 @@ void mainCss();
 void mainJs();
 void listJson();
 void controlFun();
+void wifiwatch();
 void saveEEPROM();
 bool isContainerFull();
 
@@ -105,6 +110,7 @@ void setup(void){
   Serial.println(settings.desiredval);
 
   bool foundWifi  = false;
+  int foundctr = 20;
   while(!foundWifi) {
     int8_t numAPs = WiFi.scanNetworks();
     for(int8_t idxAP = 0; (idxAP < numAPs) && (!foundWifi); idxAP ++ ) {
@@ -122,6 +128,12 @@ void setup(void){
           break;
         }
       }
+    }
+    /* We try for 20 sec then enable the POWER and mocking a standard dehumidifier without intelligence */
+    if(foundctr) {
+      foundctr--;      
+    }else {
+      digitalWrite(RELAY_PIN, 1);
     }
     delay(1000);
   }
@@ -159,6 +171,7 @@ void setup(void){
   configTimerId = timer.setInterval(15000, saveEEPROM);
   timer.disable(configTimerId);
   timer.setInterval(1000, controlFun);
+  timer.setInterval(30000,wifiwatch);
 }
 
 void loop(void){
@@ -301,5 +314,17 @@ void saveEEPROM() {
 
 bool isContainerFull() {
   return (!digitalRead(CONTAINER_PIN));
+}
+
+
+void wifiwatch(void) {
+  if(WiFi.status() != WL_CONNECTED) {
+    watch_count--;
+  }else {
+    watch_count = WATCHCOUNT;
+  }
+  if(!watch_count) {
+    ESP.restart();
+  }
 }
 

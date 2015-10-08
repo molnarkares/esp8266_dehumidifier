@@ -1,0 +1,240 @@
+PLOT REPORT
+-----------
+
+Report File:        C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier (PCB - PLOT REPORT).txt
+Report Written:     Tuesday, August 25, 2015
+Project Path:       C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier.prj
+Design Path:        C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier.pcb
+Design Title:       
+Created:            8/22/2015 11:10:09 PM
+Last Saved:         8/24/2015 6:33:22 PM
+Editing Time:       1470 min
+Units:              mm (precision 1)
+
+
+Device Settings
+===============
+
+
+Gerber Settings
+===============
+
+    Leading zero suppression.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    3.5 format absolute mm.
+    Format commands defined in Gerber file.
+    Aperture table defined in Gerber file.
+    Hardware arcs allowed.
+
+
+Drill Settings
+==============
+
+    Excellon Format 1    Format 3.5 absolute in mm.
+    No zero suppression.
+
+PDF Settings
+============
+
+Combine Plots Yes
+Use Bookmarks Yes
+Component Details Yes
+Symbol Details Yes
+Link Net Names Yes
+View PDF Yes
+All Colors Black No
+
+
+
+Plots Output
+============
+
+    Plot Job: "C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier.mop"
+
+
+Gerber Output
+=============
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Top Silkscreen.gbr
+
+    Layers:
+    ------------------
+    Top Silkscreen
+
+    D-Code Shape  (mm)
+    ---------------------
+    D10    Round 0.127
+    D12    Round 0.200
+    D15    Round 0.254
+    D98    Round 0.100
+
+Gerber Output
+=============
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Top Copper.gbr
+
+    Layers:
+    --------------
+    Top Copper
+
+    D-Code Shape  (mm)
+    ----------------------------------------------
+    D15    Round 0.254
+    D76    Round 1.422
+    D78    Round 0.813
+    D99    Rectangle 1.100 X 1.800
+    D100   Round 4.500
+    D101   Round 2.400
+    D102   Square 1.524
+    D103   Rectangle 1.016 X 1.219
+    D104   Rectangle 1.397 X 1.524  Rotation 90
+    D105   Round 1.400
+    D106   Square 1.400
+    D107   Rectangle 1.397 X 1.524
+    D108   Round 2.200
+    D109   Rectangle 0.700 X 0.500  Rotation 90
+    D110   Rectangle 0.550 X 1.000  Rotation 90
+    D111   Rectangle 1.600 X 1.600  Rotation 90
+    D112   Round 1.700
+    D113   Rectangle 1.016 X 2.032
+    D114   Round 1.600
+    D115   Round 1.000
+
+Gerber Output
+=============
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Top Solder Mask.gbr
+
+    Layers:
+    -------------------
+    Top Solder Mask
+
+    D-Code Shape  (mm)
+    ----------------------------------------------
+    D116   Rectangle 1.252 X 1.952
+    D117   Round 4.652
+    D118   Round 2.552
+    D119   Square 1.676
+    D120   Rectangle 1.168 X 1.372
+    D121   Rectangle 1.549 X 1.676  Rotation 90
+    D122   Round 1.552
+    D123   Square 1.552
+    D124   Rectangle 1.549 X 1.676
+    D125   Round 2.352
+    D126   Rectangle 0.852 X 0.652  Rotation 90
+    D127   Rectangle 0.702 X 1.152  Rotation 90
+    D128   Rectangle 1.752 X 1.752  Rotation 90
+    D129   Round 1.852
+    D130   Rectangle 1.168 X 2.184
+
+Gerber Output
+=============
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Bottom Copper.gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (mm)
+    ---------------------------------
+    D10    Round 0.127
+    D15    Round 0.254
+    D76    Round 1.422
+    D78    Round 0.813
+    D100   Round 4.500
+    D101   Round 2.400
+    D102   Square 1.524
+    D105   Round 1.400
+    D106   Square 1.400
+    D108   Round 2.200
+    D112   Round 1.700
+    D113   Rectangle 1.016 X 2.032
+    D114   Round 1.600
+
+Gerber Output
+=============
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Bottom Solder Mask.gbr
+
+    Layers:
+    ----------------------
+    Bottom Solder Mask
+
+    D-Code Shape  (mm)
+    ---------------------------------
+    D117   Round 4.652
+    D118   Round 2.552
+    D119   Square 1.676
+    D122   Round 1.552
+    D123   Square 1.552
+    D125   Round 2.352
+    D129   Round 1.852
+    D130   Rectangle 1.168 X 2.184
+
+NC Drill Output
+===============
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Drill Data - [Through Hole].drl
+
+    Output:
+    ---------------------------
+    Plated Round Drill Holes
+    Plated Slots
+    Plated Board Outlines
+
+    Tool  Size         Count   ID
+    ------------------------------------
+    T001  000.40640 mm 17    K
+    T002  000.76200 mm 2     D
+    T003  000.80000 mm 3     B
+    T004  000.81280 mm 6     E
+    T005  000.88900 mm 13    F
+    T006  001.30000 mm 5     A
+    T007  001.40000 mm 4     M
+    T008  001.50000 mm 2     C
+    T009  003.10000 mm 2     L
+    ------------------------------------
+    Total              54
+    ------------------------------------
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Drill Data - [Through Hole] (Unplated).drl
+
+    Output:
+    -----------------------------
+    Unplated Round Drill Holes
+    Unplated Slots
+    Unplated Board Outlines
+
+    Tool  Size         Count   ID
+    ------------------------------------
+    T001  000.63500 mm 1
+    ------------------------------------
+    Total              1
+    ------------------------------------
+
+
+Gerber Output
+=============
+
+C:\Users\kmolnar\Dropbox\esp8266_dehumidifier\hardware\dehumidifier - Outline.gbr
+
+    Layers:
+    ------------------
+    Board Outlines
+
+    D-Code Shape  (mm)
+    ---------------------
+    D10    Round 0.127
+
+PDF Output
+==========
+
+    Layer
+    ---------------
+    Top Copper
+    Top Silkscreen
+
+
+End Of Report.
